@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="store.php" method="post">
+        <label for="name">Enter Name:</label>
+        <input type="text" name="name" id="name" title="Enter your name" placeholder="Type your name here"><br>
+    Gender:
+    <input type="radio" name="gender" id="male" value="Male" title="Select Male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="Female" title="Select Female">
+    <label for="female">Female</label>
+<br>
+        <label for ="email">Enter Email:</label>
+        <input for="email" type="email" name="email" id="email" title="Enter your email" placeholder="Type your email here"><br>
+       Hobbies: <br>
+    <input type="checkbox" name="hobbies[]" value="Web Dev" id="webdev" title="Select Web Dev as a hobby">
+       <label for="webdev">Web Dev</label><br>
+       <input type="checkbox" name="hobbies[]" value="App Dev" id="appdev" title="Select App Dev as a hobby">
+       <label for="appdev">App Dev</label><br>
+       <input type="checkbox" name="hobbies[]" value="Singing" id="singing" title="Select Singing as a hobby">
+       <label for="singing">Singing</label><br>
+       <input type="checkbox" name="hobbies[]" value="Dancing" id="dancing" title="Select Dancing as a hobby">
+       <label for="dancing">Dancing</label><br>
+       <input type="checkbox" name="hobbies[]" value="Playing" id="playing" title="Select Playing as a hobby">
+       <label for="playing">Playing</label><br>
+
+      <label for="msg">Message:</label><br>
+      <textarea name="msg" id="msg" rows="5" cols="20" title="Enter your message" placeholder="Type your message here"></textarea>
+<br>
+       <input type="submit" value="Submit Form">
+
+    </form>
+</body>
+</html>
